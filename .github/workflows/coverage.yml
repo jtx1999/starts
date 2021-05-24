@@ -46,5 +46,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-repeats: true
           message: 'Statement coverage = ${{ steps.jacoco.outputs.coverage }}
-              Branch coverage = ${{ steps.jacoco.outputs.branches }}'
+
+                    Branch coverage = ${{ steps.jacoco.outputs.branches }}'
