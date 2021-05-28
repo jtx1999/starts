@@ -2,11 +2,9 @@ name: Report coverage
 
 on:
   push:
-    branches:
-      - '**'  # any branch
+    branches: [ master ]
   pull_request:
-    branches:
-      - '**'
+    branches: [ master ]
 
 jobs:
   build:
